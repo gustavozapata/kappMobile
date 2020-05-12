@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <View style={styles.navigation}>
       <View style={styles.navigationItem}>
-        <Image source={require('../images/star.png')} style={styles.star} />
+        <Image source={require('../images/star_a.png')} style={styles.star} />
         <Texto type="navigation">Categories</Texto>
       </View>
       <View style={styles.navigationItem}>

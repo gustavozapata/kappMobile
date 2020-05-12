@@ -23,4 +23,8 @@ const styles = StyleSheet.create({
     color: '#929292',
     alignItems: 'center',
   },
+  menu: {
+    fontSize: 20,
+    fontFamily: 'Montserrat-Medium',
+  },
 });
