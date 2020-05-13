@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import Texto from './Texto';
+import Texto from '../components/Texto';
 
 const Header = ({title}) => {
   return (
@@ -17,7 +17,8 @@ Header.defaultProps = {
 const styles = StyleSheet.create({
   header: {
     height: 80,
-    padding: 25,
+    justifyContent: 'flex-end',
+    paddingBottom: 13,
     backgroundColor: '#428BF7',
   },
 });

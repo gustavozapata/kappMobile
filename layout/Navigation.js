@@ -1,20 +1,21 @@
 import React from 'react';
-import {View, StyleSheet, Image} from 'react-native';
-import Texto from './Texto';
+import {View, StyleSheet} from 'react-native';
+import Texto from '../components/Texto';
+import Icon from 'react-native-vector-icons/dist/AntDesign';
 
 export default function Navigation() {
   return (
     <View style={styles.navigation}>
       <View style={styles.navigationItem}>
-        <Image source={require('../images/star_a.png')} style={styles.star} />
-        <Texto type="navigation">Categories</Texto>
+        <Icon name="switcher" size={25} color="#198CFF" style={styles.icon} />
+        <Texto type="navigationActive">Categories</Texto>
       </View>
       <View style={styles.navigationItem}>
-        <Image source={require('../images/star.png')} style={styles.star} />
+        <Icon name="tag" size={25} color="#B8BDCB" style={styles.icon} />
         <Texto type="navigation">Tags</Texto>
       </View>
       <View style={styles.navigationItem}>
-        <Image source={require('../images/star.png')} style={styles.star} />
+        <Icon name="setting" size={25} color="#B8BDCB" style={styles.icon} />
         <Texto type="navigation">Settings</Texto>
       </View>
     </View>
@@ -22,21 +23,23 @@ export default function Navigation() {
 }
 
 const styles = StyleSheet.create({
-  star: {
-    width: 29,
-    height: 29,
-  },
   navigation: {
     height: 80,
-    padding: 15,
+    padding: 45,
+    paddingTop: 8,
     backgroundColor: '#fff',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     flexDirection: 'row',
     borderTopWidth: 1,
-    borderTopColor: '#B2B2B2',
+    borderTopColor: '#ddd',
   },
   navigationItem: {
     alignItems: 'center',
+    // alignContent: 'flex-end',
+    justifyContent: 'flex-start',
+  },
+  icon: {
+    // marginBottom: 4,
   },
 });

@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import Texto from './Texto';
+import Icon from 'react-native-vector-icons/dist/AntDesign';
 
 const icons = {
   Assets: require('../images/assets.png'),
@@ -19,6 +20,7 @@ export default function MenuItem({item}) {
         <Texto style={styles.listItemText} type="menu">
           {item.name}
         </Texto>
+        <Icon name="right" size={18} color="#C4C4C6" style={styles.arrows} />
       </View>
     </TouchableOpacity>
   );
@@ -27,13 +29,15 @@ export default function MenuItem({item}) {
 const styles = StyleSheet.create({
   listItem: {
     padding: 15,
-    backgroundColor: '#f8f8f8',
+    // backgroundColor: '#f8f8f8',
     borderBottomWidth: 1,
     borderColor: '#eee',
+    // alignContent: 'center',
   },
   listItemView: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
+    alignItems: 'center',
   },
   listItemText: {
     fontSize: 18,
@@ -44,8 +48,12 @@ const styles = StyleSheet.create({
     height: 14,
   },
   icon: {
-    width: 28,
-    height: 28,
-    flexDirection: 'row',
+    width: 30,
+    height: 30,
+    marginRight: 15,
+    // flexDirection: 'row',
+  },
+  arrows: {
+    marginTop: 5,
   },
 });

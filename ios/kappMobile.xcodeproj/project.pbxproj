@@ -12,32 +12,30 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		24945255BBFF32F91D842C5E /* libPods-kappMobile-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F120DF1E5078047D4315F997 /* libPods-kappMobile-tvOS.a */; };
+		19313106C20EF3275478D584 /* libPods-kappMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EA3C18E1562C6E7CE289AE /* libPods-kappMobile.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* kappMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* kappMobileTests.m */; };
-		801E838014DAD84C33DDEBEC /* libPods-kappMobile-kappMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C341CA8F87E22BBE0C3125 /* libPods-kappMobile-kappMobileTests.a */; };
-		F0CAD85D9A70FF4C14A84479 /* libPods-kappMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D55D256B7724B94DD035DBEA /* libPods-kappMobile.a */; };
-		FAC5FBABE07ADBB4FB2376B0 /* libPods-kappMobile-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69404CEBB8048B7141AD23F4 /* libPods-kappMobile-tvOSTests.a */; };
-		66236BC906604557BB26B3CC /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD9EEF8603E94506B04FC2BE /* Montserrat-Bold.ttf */; };
-		04B226719EC04AE6BF28FD5D /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A4940245704DA98648641B /* Montserrat-ExtraBold.ttf */; };
-		8306F892A2C4475398D0E5EF /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5161C60B97054CB489DA20B2 /* Montserrat-Light.ttf */; };
-		663CF304CDCB4AFB89FB2774 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E781067A24821AFD8480D /* Montserrat-Medium.ttf */; };
-		2CD43C4AA045450CB6A4E80C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF7CCFB731A94159B748B2B3 /* Montserrat-Regular.ttf */; };
-		474FFD5B5CBF423B81600E15 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EE18D5FBC54352AF06EED9 /* Montserrat-Black.ttf */; };
-		AC200A8538FC4A9488445D29 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 975706506EA440A4B1C957F9 /* Montserrat-BlackItalic.ttf */; };
-		ED28E1880F204B6CB65DCDEF /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD0CC37CD8504D36BDC24B8A /* Montserrat-BoldItalic.ttf */; };
-		F5D23323E0EC481EB948727F /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6ECBDA845B6747DAA7B689FD /* Montserrat-ExtraBoldItalic.ttf */; };
-		95F1E480CCC64ED1AB5A4AA2 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5712E12A530D46F68364CAAF /* Montserrat-ExtraLight.ttf */; };
-		EC51441341B04E268A289D5A /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8D334F7866F4B1B8B81D16F /* Montserrat-ExtraLightItalic.ttf */; };
-		47F62DB82ACB438F9D79662C /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 084D67FD327B411CA0C84720 /* Montserrat-Italic.ttf */; };
-		512734758F5042718331EFC7 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83827EB531024B18A0D10ACD /* Montserrat-LightItalic.ttf */; };
-		1F21ECBBD8FD42DAA50BB259 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79C93C4A0F864CF4B1C07817 /* Montserrat-MediumItalic.ttf */; };
-		917F59917F7E417796F2EEF3 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9277AEC149243D5A6263C21 /* Montserrat-SemiBold.ttf */; };
-		0BE62963F7F54B509848BB31 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C777F39096604C43A6676E76 /* Montserrat-SemiBoldItalic.ttf */; };
-		42CD34D76256409DA19A48FB /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BADC3F4E7A04F0A9264BFCA /* Montserrat-Thin.ttf */; };
-		9C80FE647D624F0ABA896E3B /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211368B710064326BE937A79 /* Montserrat-ThinItalic.ttf */; };
+		BD404945E912DDAFCFD6191C /* libPods-kappMobile-kappMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AD7D9D26CD8D76C4D64B34 /* libPods-kappMobile-kappMobileTests.a */; };
+		C4E9CC89A9F27340606EA919 /* libPods-kappMobile-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AA5BC2812EC72E3AE58F81 /* libPods-kappMobile-tvOSTests.a */; };
+		EC62439AF042C5973C0BB1A0 /* libPods-kappMobile-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC4C43F867CEC65A3B8710 /* libPods-kappMobile-tvOS.a */; };
+		05ACFE687A1D43EE8B177260 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F128B4D5AB3420D8796EBEE /* AntDesign.ttf */; };
+		B5596B73085D47FA91BFF303 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72A93C80B3DB4BD79A30C8E2 /* Entypo.ttf */; };
+		608466E8E53446DC99A30FF0 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9198105E454E359B431F55 /* EvilIcons.ttf */; };
+		04D5AD4E56E74B2FB608BBFB /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B55A820F8EA147FAB904C0B1 /* Feather.ttf */; };
+		1C31D031A83F440BB284AAB1 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462EC090506D413EA274C5F4 /* FontAwesome.ttf */; };
+		C082A891A2E14188811F5968 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4242848AEE243008366B55C /* FontAwesome5_Brands.ttf */; };
+		65A8A33F622D41CC9F6EFBBE /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 671DA6ECFDB046C7BF69070B /* FontAwesome5_Regular.ttf */; };
+		1036CF74088F40C69CDC86A8 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02302F35F21D4514B0879741 /* FontAwesome5_Solid.ttf */; };
+		FA89035B07AE47C2B644E870 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 833BCD000F6D4F6ABEDE7768 /* Fontisto.ttf */; };
+		BC9617C924AE45FA93391B48 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C5A48CDCF44348F25D6F2 /* Foundation.ttf */; };
+		22BDF2635E284BA8998B252B /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80A3F27C881C486789B9A9B0 /* Ionicons.ttf */; };
+		05054A75909041009EC2D3ED /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A68118CC864428C8EA13C57 /* MaterialCommunityIcons.ttf */; };
+		F18C39012B9547C2ABC7158E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BECC3E0E7CC94C6CABB35520 /* MaterialIcons.ttf */; };
+		BABA38BFF3C6423E8D760593 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE0293ADC5414291A691CC20 /* Octicons.ttf */; };
+		7A20C04DD9334C88AFCCD9CC /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0010E3EA1FF54EEF81F1221F /* SimpleLineIcons.ttf */; };
+		F995EC46E078456C95EF6873 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7015ECDC088D45DC88086A95 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +60,6 @@
 		00E356EE1AD99517003FC87E /* kappMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kappMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* kappMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kappMobileTests.m; sourceTree = "<group>"; };
-		03ACD7F12F99A08600294435 /* Pods-kappMobile-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOS/Pods-kappMobile-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		119ADE5329C3005C7148229F /* Pods-kappMobile-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOSTests/Pods-kappMobile-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* kappMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kappMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = kappMobile/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = kappMobile/AppDelegate.m; sourceTree = "<group>"; };
@@ -71,38 +67,38 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = kappMobile/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = kappMobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = kappMobile/main.m; sourceTree = "<group>"; };
-		2350FA103A64ABF1CC9B5C97 /* Pods-kappMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile/Pods-kappMobile.debug.xcconfig"; sourceTree = "<group>"; };
-		29C341CA8F87E22BBE0C3125 /* libPods-kappMobile-kappMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile-kappMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* kappMobile-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kappMobile-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* kappMobile-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kappMobile-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6646FC263B7C0896B1729E6F /* Pods-kappMobile-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOS.release.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOS/Pods-kappMobile-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		69404CEBB8048B7141AD23F4 /* libPods-kappMobile-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7784166354F9AAF1863CA389 /* Pods-kappMobile-kappMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-kappMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile-kappMobileTests/Pods-kappMobile-kappMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8423D141FDECB37021043D3B /* Pods-kappMobile-kappMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-kappMobileTests.release.xcconfig"; path = "Target Support Files/Pods-kappMobile-kappMobileTests/Pods-kappMobile-kappMobileTests.release.xcconfig"; sourceTree = "<group>"; };
-		A82DADC635D8E6D1157E281E /* Pods-kappMobile-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOSTests/Pods-kappMobile-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D55D256B7724B94DD035DBEA /* libPods-kappMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9B69CF0F94039B573243F93 /* Pods-kappMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile.release.xcconfig"; path = "Target Support Files/Pods-kappMobile/Pods-kappMobile.release.xcconfig"; sourceTree = "<group>"; };
+		6896E2ACAA63FE77DDB06D59 /* Pods-kappMobile-kappMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-kappMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile-kappMobileTests/Pods-kappMobile-kappMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		870402203CEA780CC2AA9F4E /* Pods-kappMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile/Pods-kappMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		87FF714C26AE7A0DB7ABC854 /* Pods-kappMobile-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOS.release.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOS/Pods-kappMobile-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8BCC4C43F867CEC65A3B8710 /* libPods-kappMobile-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F89291FF74FE8C8DF1FB93 /* Pods-kappMobile-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOSTests/Pods-kappMobile-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2F0817EB301F8EC158E30F0 /* Pods-kappMobile-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOS/Pods-kappMobile-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BC017A577C9463E616B5853C /* Pods-kappMobile-kappMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-kappMobileTests.release.xcconfig"; path = "Target Support Files/Pods-kappMobile-kappMobileTests/Pods-kappMobile-kappMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFE8F9DF6EA8585E29B6611C /* Pods-kappMobile-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-kappMobile-tvOSTests/Pods-kappMobile-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0AA5BC2812EC72E3AE58F81 /* libPods-kappMobile-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7AD7D9D26CD8D76C4D64B34 /* libPods-kappMobile-kappMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile-kappMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EA3C18E1562C6E7CE289AE /* libPods-kappMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F120DF1E5078047D4315F997 /* libPods-kappMobile-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kappMobile-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD9EEF8603E94506B04FC2BE /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39A4940245704DA98648641B /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-ExtraBold.ttf"; path = "../assets/fonts/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5161C60B97054CB489DA20B2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; name = "Montserrat-Light.ttf"; path = "../assets/fonts/Montserrat-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1D3E781067A24821AFD8480D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FF7CCFB731A94159B748B2B3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		92EE18D5FBC54352AF06EED9 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; name = "Montserrat-Black.ttf"; path = "../assets/fonts/Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		975706506EA440A4B1C957F9 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-BlackItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FD0CC37CD8504D36BDC24B8A /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-BoldItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6ECBDA845B6747DAA7B689FD /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5712E12A530D46F68364CAAF /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Montserrat-ExtraLight.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A8D334F7866F4B1B8B81D16F /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-ExtraLightItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		084D67FD327B411CA0C84720 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; name = "Montserrat-Italic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		83827EB531024B18A0D10ACD /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-LightItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		79C93C4A0F864CF4B1C07817 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-MediumItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D9277AEC149243D5A6263C21 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C777F39096604C43A6676E76 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBoldItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1BADC3F4E7A04F0A9264BFCA /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; name = "Montserrat-Thin.ttf"; path = "../assets/fonts/Montserrat/Montserrat-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		211368B710064326BE937A79 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Montserrat-ThinItalic.ttf"; path = "../assets/fonts/Montserrat/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF1F23C412ECCE0D772C3C6E /* Pods-kappMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kappMobile.release.xcconfig"; path = "Target Support Files/Pods-kappMobile/Pods-kappMobile.release.xcconfig"; sourceTree = "<group>"; };
+		8F128B4D5AB3420D8796EBEE /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72A93C80B3DB4BD79A30C8E2 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2A9198105E454E359B431F55 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B55A820F8EA147FAB904C0B1 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		462EC090506D413EA274C5F4 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A4242848AEE243008366B55C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		671DA6ECFDB046C7BF69070B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		02302F35F21D4514B0879741 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		833BCD000F6D4F6ABEDE7768 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E64C5A48CDCF44348F25D6F2 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		80A3F27C881C486789B9A9B0 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A68118CC864428C8EA13C57 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BECC3E0E7CC94C6CABB35520 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE0293ADC5414291A691CC20 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0010E3EA1FF54EEF81F1221F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7015ECDC088D45DC88086A95 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				801E838014DAD84C33DDEBEC /* libPods-kappMobile-kappMobileTests.a in Frameworks */,
+				BD404945E912DDAFCFD6191C /* libPods-kappMobile-kappMobileTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0CAD85D9A70FF4C14A84479 /* libPods-kappMobile.a in Frameworks */,
+				19313106C20EF3275478D584 /* libPods-kappMobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24945255BBFF32F91D842C5E /* libPods-kappMobile-tvOS.a in Frameworks */,
+				EC62439AF042C5973C0BB1A0 /* libPods-kappMobile-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC5FBABE07ADBB4FB2376B0 /* libPods-kappMobile-tvOSTests.a in Frameworks */,
+				C4E9CC89A9F27340606EA919 /* libPods-kappMobile-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +154,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		02981C11345DDBF941E2D304 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				870402203CEA780CC2AA9F4E /* Pods-kappMobile.debug.xcconfig */,
+				EF1F23C412ECCE0D772C3C6E /* Pods-kappMobile.release.xcconfig */,
+				6896E2ACAA63FE77DDB06D59 /* Pods-kappMobile-kappMobileTests.debug.xcconfig */,
+				BC017A577C9463E616B5853C /* Pods-kappMobile-kappMobileTests.release.xcconfig */,
+				B2F0817EB301F8EC158E30F0 /* Pods-kappMobile-tvOS.debug.xcconfig */,
+				87FF714C26AE7A0DB7ABC854 /* Pods-kappMobile-tvOS.release.xcconfig */,
+				A6F89291FF74FE8C8DF1FB93 /* Pods-kappMobile-tvOSTests.debug.xcconfig */,
+				BFE8F9DF6EA8585E29B6611C /* Pods-kappMobile-tvOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* kappMobile */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,10 +189,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				D55D256B7724B94DD035DBEA /* libPods-kappMobile.a */,
-				29C341CA8F87E22BBE0C3125 /* libPods-kappMobile-kappMobileTests.a */,
-				F120DF1E5078047D4315F997 /* libPods-kappMobile-tvOS.a */,
-				69404CEBB8048B7141AD23F4 /* libPods-kappMobile-tvOSTests.a */,
+				E8EA3C18E1562C6E7CE289AE /* libPods-kappMobile.a */,
+				D7AD7D9D26CD8D76C4D64B34 /* libPods-kappMobile-kappMobileTests.a */,
+				8BCC4C43F867CEC65A3B8710 /* libPods-kappMobile-tvOS.a */,
+				C0AA5BC2812EC72E3AE58F81 /* libPods-kappMobile-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,8 +212,8 @@
 				00E356EF1AD99517003FC87E /* kappMobileTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				86FE545D0754D305BED68AC2 /* Pods */,
-				D8139401538F4A8E884B28DF /* Resources */,
+				02981C11345DDBF941E2D304 /* Pods */,
+				F271FB0E300643A58A06DADA /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -219,42 +231,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		86FE545D0754D305BED68AC2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2350FA103A64ABF1CC9B5C97 /* Pods-kappMobile.debug.xcconfig */,
-				E9B69CF0F94039B573243F93 /* Pods-kappMobile.release.xcconfig */,
-				7784166354F9AAF1863CA389 /* Pods-kappMobile-kappMobileTests.debug.xcconfig */,
-				8423D141FDECB37021043D3B /* Pods-kappMobile-kappMobileTests.release.xcconfig */,
-				03ACD7F12F99A08600294435 /* Pods-kappMobile-tvOS.debug.xcconfig */,
-				6646FC263B7C0896B1729E6F /* Pods-kappMobile-tvOS.release.xcconfig */,
-				119ADE5329C3005C7148229F /* Pods-kappMobile-tvOSTests.debug.xcconfig */,
-				A82DADC635D8E6D1157E281E /* Pods-kappMobile-tvOSTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		D8139401538F4A8E884B28DF /* Resources */ = {
+		F271FB0E300643A58A06DADA /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				FD9EEF8603E94506B04FC2BE /* Montserrat-Bold.ttf */,
-				39A4940245704DA98648641B /* Montserrat-ExtraBold.ttf */,
-				5161C60B97054CB489DA20B2 /* Montserrat-Light.ttf */,
-				1D3E781067A24821AFD8480D /* Montserrat-Medium.ttf */,
-				FF7CCFB731A94159B748B2B3 /* Montserrat-Regular.ttf */,
-				92EE18D5FBC54352AF06EED9 /* Montserrat-Black.ttf */,
-				975706506EA440A4B1C957F9 /* Montserrat-BlackItalic.ttf */,
-				FD0CC37CD8504D36BDC24B8A /* Montserrat-BoldItalic.ttf */,
-				6ECBDA845B6747DAA7B689FD /* Montserrat-ExtraBoldItalic.ttf */,
-				5712E12A530D46F68364CAAF /* Montserrat-ExtraLight.ttf */,
-				A8D334F7866F4B1B8B81D16F /* Montserrat-ExtraLightItalic.ttf */,
-				084D67FD327B411CA0C84720 /* Montserrat-Italic.ttf */,
-				83827EB531024B18A0D10ACD /* Montserrat-LightItalic.ttf */,
-				79C93C4A0F864CF4B1C07817 /* Montserrat-MediumItalic.ttf */,
-				D9277AEC149243D5A6263C21 /* Montserrat-SemiBold.ttf */,
-				C777F39096604C43A6676E76 /* Montserrat-SemiBoldItalic.ttf */,
-				1BADC3F4E7A04F0A9264BFCA /* Montserrat-Thin.ttf */,
-				211368B710064326BE937A79 /* Montserrat-ThinItalic.ttf */,
+				8F128B4D5AB3420D8796EBEE /* AntDesign.ttf */,
+				72A93C80B3DB4BD79A30C8E2 /* Entypo.ttf */,
+				2A9198105E454E359B431F55 /* EvilIcons.ttf */,
+				B55A820F8EA147FAB904C0B1 /* Feather.ttf */,
+				462EC090506D413EA274C5F4 /* FontAwesome.ttf */,
+				A4242848AEE243008366B55C /* FontAwesome5_Brands.ttf */,
+				671DA6ECFDB046C7BF69070B /* FontAwesome5_Regular.ttf */,
+				02302F35F21D4514B0879741 /* FontAwesome5_Solid.ttf */,
+				833BCD000F6D4F6ABEDE7768 /* Fontisto.ttf */,
+				E64C5A48CDCF44348F25D6F2 /* Foundation.ttf */,
+				80A3F27C881C486789B9A9B0 /* Ionicons.ttf */,
+				3A68118CC864428C8EA13C57 /* MaterialCommunityIcons.ttf */,
+				BECC3E0E7CC94C6CABB35520 /* MaterialIcons.ttf */,
+				FE0293ADC5414291A691CC20 /* Octicons.ttf */,
+				0010E3EA1FF54EEF81F1221F /* SimpleLineIcons.ttf */,
+				7015ECDC088D45DC88086A95 /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -267,7 +262,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "kappMobileTests" */;
 			buildPhases = (
-				6F975DD04ABD4815CC0597B6 /* [CP] Check Pods Manifest.lock */,
+				A3FE1534341DFDEE99BD002C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -286,7 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "kappMobile" */;
 			buildPhases = (
-				1D30B84ECA9901F73611F466 /* [CP] Check Pods Manifest.lock */,
+				B33B8B44E5FCFEE267D3BE84 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -306,7 +301,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "kappMobile-tvOS" */;
 			buildPhases = (
-				70FBB73AD7AA022CBB2DF6DD /* [CP] Check Pods Manifest.lock */,
+				642EFD9FFAABACD2C620C678 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -326,7 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "kappMobile-tvOSTests" */;
 			buildPhases = (
-				718AD29ADD0C23135D8C3F96 /* [CP] Check Pods Manifest.lock */,
+				3811C09857BC74B55FE27D05 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -402,24 +397,22 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				66236BC906604557BB26B3CC /* Montserrat-Bold.ttf in Resources */,
-				04B226719EC04AE6BF28FD5D /* Montserrat-ExtraBold.ttf in Resources */,
-				8306F892A2C4475398D0E5EF /* Montserrat-Light.ttf in Resources */,
-				663CF304CDCB4AFB89FB2774 /* Montserrat-Medium.ttf in Resources */,
-				2CD43C4AA045450CB6A4E80C /* Montserrat-Regular.ttf in Resources */,
-				474FFD5B5CBF423B81600E15 /* Montserrat-Black.ttf in Resources */,
-				AC200A8538FC4A9488445D29 /* Montserrat-BlackItalic.ttf in Resources */,
-				ED28E1880F204B6CB65DCDEF /* Montserrat-BoldItalic.ttf in Resources */,
-				F5D23323E0EC481EB948727F /* Montserrat-ExtraBoldItalic.ttf in Resources */,
-				95F1E480CCC64ED1AB5A4AA2 /* Montserrat-ExtraLight.ttf in Resources */,
-				EC51441341B04E268A289D5A /* Montserrat-ExtraLightItalic.ttf in Resources */,
-				47F62DB82ACB438F9D79662C /* Montserrat-Italic.ttf in Resources */,
-				512734758F5042718331EFC7 /* Montserrat-LightItalic.ttf in Resources */,
-				1F21ECBBD8FD42DAA50BB259 /* Montserrat-MediumItalic.ttf in Resources */,
-				917F59917F7E417796F2EEF3 /* Montserrat-SemiBold.ttf in Resources */,
-				0BE62963F7F54B509848BB31 /* Montserrat-SemiBoldItalic.ttf in Resources */,
-				42CD34D76256409DA19A48FB /* Montserrat-Thin.ttf in Resources */,
-				9C80FE647D624F0ABA896E3B /* Montserrat-ThinItalic.ttf in Resources */,
+				05ACFE687A1D43EE8B177260 /* AntDesign.ttf in Resources */,
+				B5596B73085D47FA91BFF303 /* Entypo.ttf in Resources */,
+				608466E8E53446DC99A30FF0 /* EvilIcons.ttf in Resources */,
+				04D5AD4E56E74B2FB608BBFB /* Feather.ttf in Resources */,
+				1C31D031A83F440BB284AAB1 /* FontAwesome.ttf in Resources */,
+				C082A891A2E14188811F5968 /* FontAwesome5_Brands.ttf in Resources */,
+				65A8A33F622D41CC9F6EFBBE /* FontAwesome5_Regular.ttf in Resources */,
+				1036CF74088F40C69CDC86A8 /* FontAwesome5_Solid.ttf in Resources */,
+				FA89035B07AE47C2B644E870 /* Fontisto.ttf in Resources */,
+				BC9617C924AE45FA93391B48 /* Foundation.ttf in Resources */,
+				22BDF2635E284BA8998B252B /* Ionicons.ttf in Resources */,
+				05054A75909041009EC2D3ED /* MaterialCommunityIcons.ttf in Resources */,
+				F18C39012B9547C2ABC7158E /* MaterialIcons.ttf in Resources */,
+				BABA38BFF3C6423E8D760593 /* Octicons.ttf in Resources */,
+				7A20C04DD9334C88AFCCD9CC /* SimpleLineIcons.ttf in Resources */,
+				F995EC46E078456C95EF6873 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,28 +448,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		1D30B84ECA9901F73611F466 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kappMobile-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,7 +462,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		6F975DD04ABD4815CC0597B6 /* [CP] Check Pods Manifest.lock */ = {
+		3811C09857BC74B55FE27D05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,14 +477,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kappMobile-kappMobileTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-kappMobile-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70FBB73AD7AA022CBB2DF6DD /* [CP] Check Pods Manifest.lock */ = {
+		642EFD9FFAABACD2C620C678 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -535,7 +506,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		718AD29ADD0C23135D8C3F96 /* [CP] Check Pods Manifest.lock */ = {
+		A3FE1534341DFDEE99BD002C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -550,7 +521,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kappMobile-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-kappMobile-kappMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33B8B44E5FCFEE267D3BE84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kappMobile-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -662,7 +655,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7784166354F9AAF1863CA389 /* Pods-kappMobile-kappMobileTests.debug.xcconfig */;
+			baseConfigurationReference = 6896E2ACAA63FE77DDB06D59 /* Pods-kappMobile-kappMobileTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -685,7 +678,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8423D141FDECB37021043D3B /* Pods-kappMobile-kappMobileTests.release.xcconfig */;
+			baseConfigurationReference = BC017A577C9463E616B5853C /* Pods-kappMobile-kappMobileTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -705,7 +698,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2350FA103A64ABF1CC9B5C97 /* Pods-kappMobile.debug.xcconfig */;
+			baseConfigurationReference = 870402203CEA780CC2AA9F4E /* Pods-kappMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -732,7 +725,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9B69CF0F94039B573243F93 /* Pods-kappMobile.release.xcconfig */;
+			baseConfigurationReference = EF1F23C412ECCE0D772C3C6E /* Pods-kappMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -753,7 +746,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03ACD7F12F99A08600294435 /* Pods-kappMobile-tvOS.debug.xcconfig */;
+			baseConfigurationReference = B2F0817EB301F8EC158E30F0 /* Pods-kappMobile-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -781,7 +774,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6646FC263B7C0896B1729E6F /* Pods-kappMobile-tvOS.release.xcconfig */;
+			baseConfigurationReference = 87FF714C26AE7A0DB7ABC854 /* Pods-kappMobile-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -809,7 +802,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 119ADE5329C3005C7148229F /* Pods-kappMobile-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = A6F89291FF74FE8C8DF1FB93 /* Pods-kappMobile-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -836,7 +829,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A82DADC635D8E6D1157E281E /* Pods-kappMobile-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = BFE8F9DF6EA8585E29B6611C /* Pods-kappMobile-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
