@@ -16,10 +16,12 @@ export default function MenuItem({item}) {
   return (
     <TouchableOpacity style={styles.listItem}>
       <View style={styles.listItemView}>
-        <Image source={icon} style={styles.icon} />
-        <Texto style={styles.listItemText} type="menu">
-          {item.name}
-        </Texto>
+        <View style={{flexDirection: 'row'}}>
+          <Image source={icon} style={styles.icon} />
+          <Texto style={styles.listItemText} type="menu">
+            {item.name}
+          </Texto>
+        </View>
         <Icon name="right" size={18} color="#C4C4C6" style={styles.arrows} />
       </View>
     </TouchableOpacity>
@@ -32,11 +34,10 @@ const styles = StyleSheet.create({
     // backgroundColor: '#f8f8f8',
     borderBottomWidth: 1,
     borderColor: '#eee',
-    // alignContent: 'center',
   },
   listItemView: {
     flexDirection: 'row',
-    // justifyContent: 'space-between',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
   listItemText: {
