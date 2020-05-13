@@ -1,56 +1,46 @@
-import React, {useState} from 'react';
-import {View, StyleSheet, FlatList, StatusBar, Platform} from 'react-native';
-import Header from './layout/Header';
-import MenuItem from './components/MenuItem';
-import Navigation from './layout/Navigation';
-// import Assets from './components/Assets';
+import 'react-native-gesture-handler';
+import React from 'react';
 
-const MyStatusBar = ({backgroundColor, ...props}) => (
-  <View style={[styles.statusBar, {backgroundColor}]}>
-    <StatusBar translucent backgroundColor={backgroundColor} {...props} />
-  </View>
-);
+import HomeScreen from './screens/HomeScreen';
+import AssetsScreen from './screens/AssetsScreen';
+import DocumentsScreen from './screens/DocumentsScreen';
+import CardsScreen from './screens/CardsScreen';
+import AppsScreen from './screens/AppsScreen';
+import TagsScreen from './screens/TagsScreen';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 const App = () => {
-  const [items, setItems] = useState([
-    {id: 1, name: 'Assets', image: 'assets.png'},
-    {id: 2, name: 'Documents', image: 'documents.png'},
-    {id: 3, name: 'Cards', image: 'cards.png'},
-    {id: 4, name: 'Apps', image: 'apps.png'},
-  ]);
-
   return (
-    <View style={styles.container}>
-      <MyStatusBar backgroundColor="#428BF7" barStyle="light-content" />
-      <Header />
-      <FlatList
-        data={items}
-        renderItem={({item}) => <MenuItem item={item} />}
-      />
-      {/* <Assets /> */}
-      <Navigation />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Home"
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#428BF7',
+          },
+          headerTintColor: '#fff',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{title: 'Categories'}}
+        />
+        <Stack.Screen name="Assets" component={AssetsScreen} />
+        <Stack.Screen name="Documents" component={DocumentsScreen} />
+        <Stack.Screen name="Cards" component={CardsScreen} />
+        <Stack.Screen name="Apps" component={AppsScreen} />
+
+        <Stack.Screen name="Tags" component={TagsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBar.currentHeight;
-const APPBAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  statusBar: {
-    height: STATUSBAR_HEIGHT,
-  },
-  appBar: {
-    backgroundColor: '#79B45D',
-    height: APPBAR_HEIGHT,
-  },
-  content: {
-    flex: 1,
-    backgroundColor: '#33373B',
-  },
-});
 
 export default App;

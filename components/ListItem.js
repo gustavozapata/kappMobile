@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {View, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import Texto from './Texto';
 
 export default function ListItem({item, deleteItem}) {
@@ -23,7 +23,7 @@ export default function ListItem({item, deleteItem}) {
 const styles = StyleSheet.create({
   listItem: {
     padding: 15,
-    backgroundColor: '#f8f8f8',
+    // backgroundColor: '#f8f8f8',
     borderBottomWidth: 1,
     borderColor: '#eee',
   },
