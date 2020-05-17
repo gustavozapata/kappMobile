@@ -1,14 +1,19 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, StyleSheet, FlatList} from 'react-native';
 import ListItem from '../components/ListItem';
 import Navigation from '../layout/Navigation';
 
 const CardsScreen = ({navigation}) => {
-  const [items, setItems] = useState([
-    {id: 1, name: 'Barclays'},
-    {id: 2, name: 'Nationwide'},
-    {id: 3, name: 'Monzo'},
-  ]);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch('http://192.168.1.29:4000/api/v1/cards')
+      .then(res => res.json())
+      .then(data => setItems(data.data))
+      .catch(err => {
+        console.log(err);
+      });
+  }, []);
 
   const deleteItem = id => {
     setItems(prevItems => {

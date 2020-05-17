@@ -1,14 +1,19 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, StyleSheet, FlatList} from 'react-native';
 import ListItem from '../components/ListItem';
 import Navigation from '../layout/Navigation';
 
 const DocumentsScreen = ({navigation}) => {
-  const [items, setItems] = useState([
-    {id: 1, name: 'Passport'},
-    {id: 2, name: 'Cedula'},
-    {id: 3, name: 'Driving Licence'},
-  ]);
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    fetch('http://192.168.1.29:4000/api/v1/documents')
+      .then(res => res.json())
+      .then(data => setItems(data.data))
+      .catch(err => {
+        console.log(err);
+      });
+  }, []);
 
   const deleteItem = id => {
     setItems(prevItems => {

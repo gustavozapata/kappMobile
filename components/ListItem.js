@@ -9,7 +9,7 @@ export default function ListItem({item, deleteItem}) {
         <Texto style={styles.listItemText} type="text">
           {item.name}
         </Texto>
-        <TouchableOpacity onPress={() => deleteItem(item.id)}>
+        <TouchableOpacity onPress={() => deleteItem(item._id)}>
           <Image
             source={require('../images/bin.png')}
             style={styles.listItemDelete}
