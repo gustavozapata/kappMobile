@@ -42,7 +42,7 @@ const AssetsScreen = ({navigation}) => {
       {
         text: 'OK',
         onPress: () => {
-          fetch('http://192.168.1.29:4000/api/v1/assets/' + id, {
+          fetch(`${host}:4000/api/v1/assets/${id}`, {
             method: 'DELETE',
           }).then(() => {
             loadData();
