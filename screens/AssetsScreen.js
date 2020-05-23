@@ -8,6 +8,7 @@ import {
   TouchableHighlight,
   Text,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/dist/AntDesign';
 import ListItem from '../components/ListItem';
 import AddItem from '../components/AddItem';
 import Navigation from '../layout/Navigation';
@@ -16,6 +17,7 @@ import host from '../Local';
 const AssetsScreen = ({navigation}) => {
   const [items, setItems] = useState([]);
   const [showAdd, setShowAdd] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     loadData();
@@ -31,7 +33,10 @@ const AssetsScreen = ({navigation}) => {
   const loadData = () => {
     fetch(`${host}:4000/api/v1/assets`)
       .then(res => res.json())
-      .then(data => setItems(data.data))
+      .then(data => {
+        setItems(data.data);
+        setIsLoading(false);
+      })
       .catch(err => {
         console.log(err);
       });
@@ -67,6 +72,7 @@ const AssetsScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
+      {isLoading && <Icon name="loading1" size={45} />}
       <FlatList
         data={items}
         renderItem={({item}) => (
