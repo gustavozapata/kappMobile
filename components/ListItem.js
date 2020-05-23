@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/dist/Octicons';
 
 export default function ListItem({item, deleteItem}) {
   return (
-    <TouchableOpacity style={styles.listItem}>
+    <View style={styles.listItem}>
       <View style={styles.listItemView}>
         <Text style={styles.listItemText} type="text">
           {item.name}
@@ -42,7 +42,7 @@ export default function ListItem({item, deleteItem}) {
           style={styles.listItemDelete}
         />
       </TouchableOpacity>
-    </TouchableOpacity>
+    </View>
   );
 }
 

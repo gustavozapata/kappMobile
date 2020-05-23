@@ -72,7 +72,11 @@ const AssetsScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      {isLoading && <Icon name="loading1" size={45} />}
+      {isLoading && (
+        <View style={styles.loading}>
+          <Icon name="loading1" size={45} color={'#428bf7'} />
+        </View>
+      )}
       <FlatList
         data={items}
         renderItem={({item}) => (
@@ -147,6 +151,12 @@ const styles = StyleSheet.create({
   modalText: {
     marginBottom: 15,
     textAlign: 'center',
+  },
+  loading: {
+    flex: 5,
+    // textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
