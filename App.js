@@ -2,10 +2,7 @@ import 'react-native-gesture-handler';
 import React from 'react';
 
 import HomeScreen from './screens/HomeScreen';
-import AssetsScreen from './screens/AssetsScreen';
-import DocumentsScreen from './screens/DocumentsScreen';
-import CardsScreen from './screens/CardsScreen';
-import AppsScreen from './screens/AppsScreen';
+import ItemsScreen from './screens/ItemsScreen';
 import TagsScreen from './screens/TagsScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -32,10 +29,18 @@ const App = () => {
           component={HomeScreen}
           options={{title: 'Categories'}}
         />
-        <Stack.Screen name="Assets" component={AssetsScreen} />
-        <Stack.Screen name="Documents" component={DocumentsScreen} />
-        <Stack.Screen name="Cards" component={CardsScreen} />
-        <Stack.Screen name="Apps" component={AppsScreen} />
+        <Stack.Screen name="Assets">
+          {props => <ItemsScreen {...props} view={'Assets'} />}
+        </Stack.Screen>
+        <Stack.Screen name="Documents">
+          {props => <ItemsScreen {...props} view={'Documents'} />}
+        </Stack.Screen>
+        <Stack.Screen name="Cards">
+          {props => <ItemsScreen {...props} view={'Cards'} />}
+        </Stack.Screen>
+        <Stack.Screen name="Apps">
+          {props => <ItemsScreen {...props} view={'Apps'} />}
+        </Stack.Screen>
 
         <Stack.Screen name="Tags" component={TagsScreen} />
       </Stack.Navigator>

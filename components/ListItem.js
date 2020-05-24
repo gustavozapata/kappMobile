@@ -28,20 +28,21 @@ export default function ListItem({item, deleteItem}) {
           </View>
         )}
       </View>
-      {item.keywords && (
-        <View style={styles.keywords}>
-          {item.keywords.map(key => (
-            <Text style={styles.keyword}>{key}</Text>
-          ))}
-        </View>
-      )}
-
-      <TouchableOpacity onPress={() => deleteItem(item._id)}>
-        <Image
-          source={require('../images/bin.png')}
-          style={styles.listItemDelete}
-        />
-      </TouchableOpacity>
+      <View style={styles.bottomPart}>
+        {item.keywords && (
+          <View style={styles.keywords}>
+            {item.keywords.map(key => (
+              <Text style={styles.keyword}>{key}</Text>
+            ))}
+          </View>
+        )}
+        <TouchableOpacity onPress={() => deleteItem(item._id)}>
+          <Image
+            source={require('../images/bin.png')}
+            style={styles.listItemDelete}
+          />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -70,15 +71,18 @@ const styles = StyleSheet.create({
   listItemDelete: {
     width: 12,
     height: 14,
-    alignSelf: 'flex-end',
-    marginTop: -17,
+    // marginTop: -17,
   },
   info: {
     flexDirection: 'row',
     // marginTop: 5,
   },
-  keywords: {
+  bottomPart: {
     marginTop: 4,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  keywords: {
     flexDirection: 'row',
   },
   keyword: {
@@ -87,7 +91,8 @@ const styles = StyleSheet.create({
     borderColor: '#428bf7',
     borderRadius: 3,
     // paddingVertical: 0,
-    paddingHorizontal: 2,
+    // paddingHorizontal: 2,
+    paddingLeft: 2,
     fontSize: 10,
     color: '#fff',
     backgroundColor: '#428bf7',
