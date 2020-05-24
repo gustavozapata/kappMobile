@@ -7,8 +7,12 @@ import {
   Text,
   TextInput,
 } from 'react-native';
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 export default function AddModal({view, addItem, hide}) {
+  //   const [date, setDate] = useState(new Date());
+  //   const [showDatepicker, setShowDatepicker] = useState(false);
+
   const [keyword, setKeyword] = useState('');
   const [keywords, setKeywords] = useState([]);
   const [item, setItem] = useState({
@@ -20,6 +24,30 @@ export default function AddModal({view, addItem, hide}) {
     expire: '',
     keywords: [],
   });
+
+  const [date, setDate] = useState(new Date(1598051730000));
+  const [mode, setMode] = useState('date');
+  const [show, setShow] = useState(false);
+
+  const onChange = (event, selectedDate) => {
+    const currentDate = selectedDate || date;
+    setShow(Platform.OS === 'ios');
+    setDate(currentDate);
+    handleChange('expire', getDate(currentDate));
+  };
+
+  const showMode = currentMode => {
+    setShow(true);
+    setMode(currentMode);
+  };
+
+  const showDatepicker = () => {
+    showMode('date');
+  };
+
+  const showTimepicker = () => {
+    showMode('time');
+  };
 
   useEffect(() => {
     handleChange('keywords', keywords);
@@ -46,6 +74,18 @@ export default function AddModal({view, addItem, hide}) {
   const removeTag = key => {
     let keys = keywords.filter(el => el !== key);
     setKeywords([...keys]);
+  };
+
+  //   const onSelectDate = (event, selectedDate) => {
+  //     const currentDate = selectedDate || date;
+  //     // setShow(Platform.OS === 'ios');
+  //     handleChange('expire', getDate(currentDate));
+  //     setDate(currentDate);
+  //   };
+
+  const getDate = eldate => {
+    const formatDate = new Date(eldate);
+    return formatDate.toDateString();
   };
 
   return (
@@ -76,9 +116,21 @@ export default function AddModal({view, addItem, hide}) {
             <TextInput
               placeholder="Expire Date"
               style={styles.input}
-              onChangeText={value => handleChange('expire', value)}
+              onFocus={() => setShow(true)}
               value={item.expire}
             />
+            {show && (
+              <DateTimePicker
+                testID="dateTimePicker"
+                timeZoneOffsetInMinutes={0}
+                value={date}
+                mode={mode}
+                is24Hour={true}
+                display="default"
+                onChange={onChange}
+              />
+            )}
+
             <View style={styles.tagContainer}>
               <TextInput
                 placeholder="Tags"

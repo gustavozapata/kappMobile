@@ -4,6 +4,7 @@ import React from 'react';
 import HomeScreen from './screens/HomeScreen';
 import ItemsScreen from './screens/ItemsScreen';
 import TagsScreen from './screens/TagsScreen';
+import TestScreen from './screens/TestScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -41,6 +42,7 @@ const App = () => {
         <Stack.Screen name="Apps">
           {props => <ItemsScreen {...props} view={'Apps'} />}
         </Stack.Screen>
+        <Stack.Screen name="Test" component={TestScreen} />
 
         <Stack.Screen name="Tags" component={TagsScreen} />
       </Stack.Navigator>
