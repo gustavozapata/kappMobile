@@ -4,15 +4,17 @@ import {
   StyleSheet,
   Modal,
   TouchableHighlight,
+  TouchableOpacity,
   Text,
   TextInput,
   Platform,
 } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 
-export default function AddModal({view, addItem, hide}) {
+export default function AddModal({view, addItem, hide, isEdit, itemEdit}) {
   const [date, setDate] = useState(new Date());
   const [show, setShow] = useState(false);
+  const [mode, setMode] = useState('Add');
 
   const [keyword, setKeyword] = useState('');
   const [keywords, setKeywords] = useState([]);
@@ -33,6 +35,15 @@ export default function AddModal({view, addItem, hide}) {
     setDate(currentDate);
     handleChange('expire', getDate(currentDate));
   };
+
+  useEffect(() => {
+    let elMode = isEdit ? 'Edit' : 'Add';
+    setMode(elMode);
+    if (isEdit) {
+      setItem({...itemEdit});
+      setKeywords([...itemEdit.keywords]);
+    }
+  }, []);
 
   useEffect(() => {
     handleChange('keywords', keywords);
@@ -66,11 +77,18 @@ export default function AddModal({view, addItem, hide}) {
     return formatDate.toDateString();
   };
 
+  const convertToStringDate = eldate => {
+    let date_ = new Date(eldate).toDateString();
+    return date_;
+  };
+
   return (
     <Modal animationType="fade" transparent={true} visible={true}>
       <View style={styles.centeredView}>
         <View style={styles.modalView}>
-          <Text style={styles.modalText}>Add {view.slice(0, -1)}</Text>
+          <Text style={styles.modalText}>
+            {mode} {view.slice(0, -1)}
+          </Text>
           {/* <AddItem /> */}
           <View style={styles.fields}>
             <TextInput
@@ -95,7 +113,7 @@ export default function AddModal({view, addItem, hide}) {
               placeholder="Expire Date"
               style={styles.input}
               onFocus={() => setShow(true)}
-              value={item.expire}
+              value={item.expire && convertToStringDate(item.expire)}
             />
             {show && (
               <DateTimePicker
@@ -116,9 +134,9 @@ export default function AddModal({view, addItem, hide}) {
                 onChangeText={value => setKeyword(value)}
                 value={keyword}
               />
-              <TouchableHighlight style={styles.btnView} onPress={addTag}>
+              <TouchableOpacity style={styles.btnView} onPress={addTag}>
                 <Text style={styles.btnTag}>+</Text>
-              </TouchableHighlight>
+              </TouchableOpacity>
             </View>
             <View style={styles.tags}>
               {keywords.map(key => (
@@ -135,7 +153,7 @@ export default function AddModal({view, addItem, hide}) {
             <TouchableHighlight
               style={{...styles.button, backgroundColor: '#2196F3'}}
               onPress={() => addItem(item)}>
-              <Text style={styles.textStyle}>Add</Text>
+              <Text style={styles.textStyle}>{mode}</Text>
             </TouchableHighlight>
             <TouchableHighlight
               style={{...styles.button, backgroundColor: '#2196F3'}}
@@ -157,11 +175,12 @@ const styles = StyleSheet.create({
   },
   fields: {
     flex: 3,
+    // height: 300,
     justifyContent: 'space-evenly',
   },
   tags: {
     flexDirection: 'row',
-    marginTop: 5,
+    marginTop: 1,
     flexWrap: 'wrap',
   },
   deleteTag: {
@@ -183,6 +202,7 @@ const styles = StyleSheet.create({
   tagContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginBottom: 1,
     alignItems: 'center',
   },
   inputTag: {
@@ -210,11 +230,13 @@ const styles = StyleSheet.create({
   },
   modalView: {
     width: '95%',
-    height: '75%',
-    margin: 20,
+    height: 550,
+    // height: '75%',
+    margin: 10,
     backgroundColor: 'white',
     borderRadius: 20,
-    padding: 35,
+    paddingVertical: 35,
+    paddingHorizontal: 15,
     alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: {
@@ -242,15 +264,15 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   modalText: {
-    marginBottom: 20,
+    marginBottom: 2,
     fontSize: 19,
     fontWeight: 'bold',
     textAlign: 'center',
   },
   input: {
     width: 250,
-    paddingBottom: 4,
-    marginBottom: 5,
+    paddingBottom: 2,
+    marginBottom: 1,
     fontSize: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',

@@ -10,12 +10,19 @@ const ItemsScreen = ({navigation, view}) => {
   const [items, setItems] = useState([]);
   const [showAdd, setShowAdd] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isEdit, setIsEdit] = useState(false);
+  const [itemEdit, setItemEdit] = useState({});
 
   useEffect(() => {
     loadData();
     navigation.setOptions({
       headerRight: () => (
-        <Text onPress={() => setShowAdd(true)} style={styles.addButton}>
+        <Text
+          onPress={() => {
+            setShowAdd(true);
+            setIsEdit(false);
+          }}
+          style={styles.addButton}>
           +
         </Text>
       ),
@@ -52,25 +59,49 @@ const ItemsScreen = ({navigation, view}) => {
     ]);
   };
 
+  const openEdit = item => {
+    setIsEdit(true);
+    setItemEdit(item);
+    setShowAdd(true);
+  };
+
+  const edit = item => {
+    fetch(`${host}:4000/api/v1/${view}/${item._id}`, {
+      method: 'PATCH',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({...item}),
+    }).then(() => {
+      loadData();
+      setShowAdd(false);
+    });
+  };
+
   const addItem = item => {
-    if (!item.name) {
-      Alert.alert('⚠️', 'Name is required', [{text: 'OK'}]);
+    if (isEdit) {
+      edit(item);
     } else {
-      fetch(`${host}:4000/api/v1/${view}`, {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({...item}),
-      })
-        .then(() => {
-          loadData();
-          setShowAdd(false);
+      if (!item.name) {
+        Alert.alert('⚠️', 'Name is required', [{text: 'OK'}]);
+      } else {
+        fetch(`${host}:4000/api/v1/${view}`, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({...item}),
         })
-        .catch(err => {
-          Alert.alert('🔺', `Error: ${err.response.message}`, [{text: 'OK'}]);
-        });
+          .then(() => {
+            loadData();
+            setShowAdd(false);
+          })
+          .catch(err => {
+            Alert.alert('🔺', `Error: ${err.response.message}`, [{text: 'OK'}]);
+          });
+      }
     }
   };
 
@@ -80,13 +111,15 @@ const ItemsScreen = ({navigation, view}) => {
       <FlatList
         data={items}
         renderItem={({item}) => (
-          <ListItem item={item} deleteItem={deleteItem} />
+          <ListItem item={item} deleteItem={deleteItem} openEdit={openEdit} />
         )}
       />
 
       {showAdd && (
         <AddModal
           view={view}
+          isEdit={isEdit}
+          itemEdit={itemEdit}
           addItem={addItem}
           hide={() => setShowAdd(false)}
         />

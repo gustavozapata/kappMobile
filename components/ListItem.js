@@ -3,14 +3,16 @@ import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native';
 // import Texto from './Texto';
 import Icon from 'react-native-vector-icons/dist/Octicons';
 
-export default function ListItem({item, deleteItem}) {
+export default function ListItem({item, deleteItem, openEdit}) {
   return (
     <View style={styles.listItem}>
       <View style={styles.listItemView}>
         <Text style={styles.listItemText} type="text">
           {item.name}
         </Text>
-        <Icon name="pencil" size={15} />
+        <TouchableOpacity onPress={() => openEdit(item)}>
+          <Icon name="pencil" size={15} />
+        </TouchableOpacity>
       </View>
       <View style={styles.info}>
         <Icon name="location" size={15} color={'#428BF7'} style={styles.icon} />
