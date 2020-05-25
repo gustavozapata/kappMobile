@@ -10,11 +10,13 @@ const icons = {
   Apps: require('../images/apps.png'),
 };
 
-export default function MenuItem({item}) {
+export default function MenuItem({item, navigation}) {
   const icon = icons[item.name];
 
   return (
-    <TouchableOpacity style={styles.listItem}>
+    <TouchableOpacity
+      style={styles.listItem}
+      onPress={() => navigation.navigate(item.name)}>
       <View style={styles.listItemView}>
         <View style={{flexDirection: 'row'}}>
           <Image source={icon} style={styles.icon} />

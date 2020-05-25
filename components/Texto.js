@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   menu: {
-    fontSize: 20,
+    fontSize: 18,
+    marginTop: 3,
     color: '#4A4A4A',
     // fontFamily: 'Montserrat-Medium',
   },
