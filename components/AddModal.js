@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
   fields: {
     flex: 2,
     // height: 300,
-    marginTop: 60,
+    marginTop: 30,
     justifyContent: 'space-evenly',
   },
   tags: {
@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
   input: {
     width: 250,
     paddingBottom: 2,
-    marginBottom: 20,
+    marginBottom: 30,
     fontSize: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
