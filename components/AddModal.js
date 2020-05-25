@@ -138,6 +138,7 @@ export default function AddModal({view, addItem, hide, isEdit, itemEdit}) {
                 onChangeText={value => setKeyword(value)}
                 onSubmitEditing={addTag}
                 value={keyword}
+                autoCorrect={false}
               />
               <TouchableOpacity style={styles.btnView} onPress={addTag}>
                 <Text style={styles.btnTag}>+</Text>
