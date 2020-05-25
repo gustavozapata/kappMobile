@@ -6,12 +6,13 @@ import {
   TouchableHighlight,
   Text,
   TextInput,
+  Platform,
 } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 
 export default function AddModal({view, addItem, hide}) {
-  //   const [date, setDate] = useState(new Date());
-  //   const [showDatepicker, setShowDatepicker] = useState(false);
+  const [date, setDate] = useState(new Date());
+  const [show, setShow] = useState(false);
 
   const [keyword, setKeyword] = useState('');
   const [keywords, setKeywords] = useState([]);
@@ -25,28 +26,12 @@ export default function AddModal({view, addItem, hide}) {
     keywords: [],
   });
 
-  const [date, setDate] = useState(new Date(1598051730000));
-  const [mode, setMode] = useState('date');
-  const [show, setShow] = useState(false);
-
   const onChange = (event, selectedDate) => {
     const currentDate = selectedDate || date;
-    setShow(Platform.OS === 'ios');
+    // setShow(Platform.OS === 'ios');
+    setShow(false);
     setDate(currentDate);
     handleChange('expire', getDate(currentDate));
-  };
-
-  const showMode = currentMode => {
-    setShow(true);
-    setMode(currentMode);
-  };
-
-  const showDatepicker = () => {
-    showMode('date');
-  };
-
-  const showTimepicker = () => {
-    showMode('time');
   };
 
   useEffect(() => {
@@ -75,13 +60,6 @@ export default function AddModal({view, addItem, hide}) {
     let keys = keywords.filter(el => el !== key);
     setKeywords([...keys]);
   };
-
-  //   const onSelectDate = (event, selectedDate) => {
-  //     const currentDate = selectedDate || date;
-  //     // setShow(Platform.OS === 'ios');
-  //     handleChange('expire', getDate(currentDate));
-  //     setDate(currentDate);
-  //   };
 
   const getDate = eldate => {
     const formatDate = new Date(eldate);
@@ -124,7 +102,7 @@ export default function AddModal({view, addItem, hide}) {
                 testID="dateTimePicker"
                 timeZoneOffsetInMinutes={0}
                 value={date}
-                mode={mode}
+                mode={'date'}
                 is24Hour={true}
                 display="default"
                 onChange={onChange}
@@ -173,12 +151,13 @@ export default function AddModal({view, addItem, hide}) {
 
 const styles = StyleSheet.create({
   centeredView: {
-    flex: 1,
+    flex: 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
   fields: {
     flex: 3,
+    justifyContent: 'space-evenly',
   },
   tags: {
     flexDirection: 'row',
@@ -216,7 +195,7 @@ const styles = StyleSheet.create({
   },
   btnView: {
     width: 30,
-    height: 20,
+    // height: 20,
     padding: 1,
   },
   btnTag: {
@@ -230,8 +209,8 @@ const styles = StyleSheet.create({
     color: '#2196F3',
   },
   modalView: {
-    width: 350,
-    height: 480,
+    width: '95%',
+    height: '75%',
     margin: 20,
     backgroundColor: 'white',
     borderRadius: 20,
@@ -263,7 +242,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   modalText: {
-    marginBottom: 15,
+    marginBottom: 20,
     fontSize: 19,
     fontWeight: 'bold',
     textAlign: 'center',
@@ -271,7 +250,7 @@ const styles = StyleSheet.create({
   input: {
     width: 250,
     paddingBottom: 4,
-    marginBottom: 4,
+    marginBottom: 5,
     fontSize: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',

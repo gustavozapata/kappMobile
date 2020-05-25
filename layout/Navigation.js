@@ -35,7 +35,8 @@ export default function Navigation({navigation, active}) {
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.navigationItem}
-        onPress={() => navigation.navigate('Tags', {tags})}>
+        // onPress={() => navigation.navigate('Tags', {tags})}
+      >
         <Icon
           name="tag"
           size={23}

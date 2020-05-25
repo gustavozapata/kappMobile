@@ -91,8 +91,8 @@ const styles = StyleSheet.create({
     borderColor: '#428bf7',
     borderRadius: 3,
     // paddingVertical: 0,
-    // paddingHorizontal: 2,
-    paddingLeft: 2,
+    paddingHorizontal: 2,
+    // paddingLeft: 2,
     fontSize: 10,
     color: '#fff',
     backgroundColor: '#428bf7',
@@ -103,6 +103,6 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginRight: 4,
-    marginTop: 2,
+    // marginTop: 2,
   },
 });
