@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
   fields: {
     flex: 2,
     // height: 300,
-    marginTop: 40,
+    marginTop: 60,
     justifyContent: 'space-evenly',
   },
   tags: {
