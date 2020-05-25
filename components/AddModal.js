@@ -132,6 +132,7 @@ export default function AddModal({view, addItem, hide, isEdit, itemEdit}) {
                 placeholder="Tags"
                 style={styles.inputTag}
                 onChangeText={value => setKeyword(value)}
+                onSubmitEditing={addTag}
                 value={keyword}
               />
               <TouchableOpacity style={styles.btnView} onPress={addTag}>
@@ -174,14 +175,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   fields: {
-    flex: 3,
+    flex: 2,
     // height: 300,
+    marginTop: 20,
     justifyContent: 'space-evenly',
   },
   tags: {
     flexDirection: 'row',
     marginTop: 1,
     flexWrap: 'wrap',
+    flex: 1,
   },
   deleteTag: {
     paddingLeft: 5,
@@ -202,7 +205,7 @@ const styles = StyleSheet.create({
   tagContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBottom: 1,
+    marginBottom: 0,
     alignItems: 'center',
   },
   inputTag: {
@@ -272,7 +275,7 @@ const styles = StyleSheet.create({
   input: {
     width: 250,
     paddingBottom: 2,
-    marginBottom: 1,
+    marginBottom: 20,
     fontSize: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
