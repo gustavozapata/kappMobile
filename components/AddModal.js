@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Text,
   TextInput,
+  Keyboard,
   Platform,
 } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
@@ -112,7 +113,10 @@ export default function AddModal({view, addItem, hide, isEdit, itemEdit}) {
             <TextInput
               placeholder="Expire Date"
               style={styles.input}
-              onFocus={() => setShow(true)}
+              onFocus={() => {
+                setShow(true);
+                Keyboard.dismiss();
+              }}
               value={item.expire && convertToStringDate(item.expire)}
             />
             {show && (
